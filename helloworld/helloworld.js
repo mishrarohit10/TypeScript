@@ -6,3 +6,5 @@ var maried = false;
 var anything = "23";
 var salary = 34000.434;
 anything = 45;
+// template strings 
+console.log("hi ".concat(employee));
