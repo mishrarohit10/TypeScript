@@ -1,27 +1,27 @@
+"use strict";
 // not requred that class name and file be same
-var Customer = /** @class */ (function () {
+class Customer {
     //constructors
-    function Customer(theFirst, theLast) {
+    constructor(theFirst, theLast) {
         this.firstName = theFirst;
         this.lastName = theLast;
     }
     //getter /setters
-    Customer.prototype.getFirstName = function () {
+    getFirstName() {
         return this.firstName;
-    };
-    Customer.prototype.setFirstName = function (theFirst) {
+    }
+    setFirstName(theFirst) {
         this.firstName = theFirst;
-    };
-    Customer.prototype.getLastName = function () {
+    }
+    getLastName() {
         return this.lastName;
-    };
-    Customer.prototype.setLastName = function (theLast) {
+    }
+    setLastName(theLast) {
         this.lastName = theLast;
-    };
-    return Customer;
-}());
+    }
+}
 // creating a new instance using the new keyword
-var myCustomer = new Customer("HELLO", "Rohit");
+let myCustomer = new Customer("HELLO", "Rohit");
 // myCustomer.firstName = "Bruce";
 // myCustomer.lastName = "Wayne";
 console.log(myCustomer.getFirstName());
