@@ -25,6 +25,6 @@ let custo = new cust("Hi", "Rohit");
 // myCustomer.firstName = "Bruce";
 // myCustomer.lastName = "Wayne";
 console.log(custo.FirstName);
-// console.log(myCustomer.getLastName());
+// console.log(custo.LastName);
 
 

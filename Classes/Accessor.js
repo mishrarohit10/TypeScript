@@ -1,22 +1,27 @@
 "use strict";
 // not requred that class name and file be same
-class cust {
+var cust = /** @class */ (function () {
     //constructors
-    constructor(theFirst, theLast) {
+    function cust(theFirst, theLast) {
         this._firstName = theFirst;
         this._lastName = theLast;
     }
-    //TS offers alternate syntax for getters and setters by defining special: get/ set methods known as Accessors
-    get FirstName() {
-        return this._firstName;
-    }
-    set FirstName(theFirst) {
-        this._firstName = theFirst;
-    }
-}
+    Object.defineProperty(cust.prototype, "FirstName", {
+        //TS offers alternate syntax for getters and setters by defining special: get/ set methods known as Accessors
+        get: function () {
+            return this._firstName;
+        },
+        set: function (theFirst) {
+            this._firstName = theFirst;
+        },
+        enumerable: false,
+        configurable: true
+    });
+    return cust;
+}());
 // creating a new instance using the new keyword
-let custo = new cust("Hi", "Rohit");
+var custo = new cust("Hi", "Rohit");
 // myCustomer.firstName = "Bruce";
 // myCustomer.lastName = "Wayne";
 console.log(custo.FirstName);
-// console.log(myCustomer.getLastName());
+// console.log(custo.LastName);
