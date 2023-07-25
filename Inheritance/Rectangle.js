@@ -28,6 +28,9 @@ var Rectangle = /** @class */ (function (_super) {
     Rectangle.prototype.getInfo = function () {
         return _super.prototype.getInfo.call(this) + ", width=".concat(this._width, ", length=").concat(this._length);
     };
+    Rectangle.prototype.calculateArea = function () {
+        return this._width * this._length;
+    };
     return Rectangle;
 }(Shapes_1.Shapes));
 exports.Rectangle = Rectangle;

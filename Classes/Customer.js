@@ -1,5 +1,7 @@
 "use strict";
 // not requred that class name and file be same
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Customer = void 0;
 var Customer = /** @class */ (function () {
     //constructors
     function Customer(theFirst, theLast) {
@@ -21,9 +23,7 @@ var Customer = /** @class */ (function () {
     };
     return Customer;
 }());
+exports.Customer = Customer;
 // creating a new instance using the new keyword
-var myCustomer = new Customer("HELLO", "Rohit");
 // myCustomer.firstName = "Bruce";
 // myCustomer.lastName = "Wayne";
-console.log(myCustomer.getFirstName());
-console.log(myCustomer.getLastName());

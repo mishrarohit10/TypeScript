@@ -8,4 +8,8 @@ export class Rectangle extends Shapes{
     getInfo(): string {
         return super.getInfo() + `, width=${this._width}, length=${this._length}`;
     }
+
+    calculateArea(): number {
+        return this._width * this._length;
+    }
 } 

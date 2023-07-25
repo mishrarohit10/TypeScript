@@ -1,3 +1,4 @@
+"use strict";
 //arrays declare
 var reviews = [1, 2, 3, 4.2, 5, 6];
 // for loop 

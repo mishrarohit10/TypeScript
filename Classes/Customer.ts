@@ -1,6 +1,6 @@
 // not requred that class name and file be same
 
-class Customer {
+export class Customer {
     // properties
     private firstName: string;
     private lastName: string;
@@ -29,10 +29,8 @@ class Customer {
     }
 }
 // creating a new instance using the new keyword
-let myCustomer = new Customer("HELLO", "Rohit"); 
+
 // myCustomer.firstName = "Bruce";
 // myCustomer.lastName = "Wayne";
-console.log(myCustomer.getFirstName());
-console.log(myCustomer.getLastName());
 
 
