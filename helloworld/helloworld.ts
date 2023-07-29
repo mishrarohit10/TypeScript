@@ -6,6 +6,5 @@ let maried: boolean = false;
 let anything: any = "23";
 let salary: number = 34000.434;
 anything = 45;
-`
 // template strings 
 console.log(`hi ${employee}`);
